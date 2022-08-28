@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculater</title>
+    <style>
+        form {
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+
+        #label {
+            margin-left: 360px;
+            margin-right: 300px;
+            padding: 40px;
+            width: 390px;
+            font-size: 15px;
+        }
+
+        h3 {
+            margin-left: 560px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        fieldset {
+            background-color: rgb(226, 226, 226);
+        }
+
+        button {
+            background-color: transparent;
+            color: rgb(0, 0, 0);
+            border-radius: 6px;
+            position: relative;
+            left: 80px;
+        }
+
+        button:hover {
+            background-color: red;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h3><ins>FEES CALCULATOR</ins></h3>
+    <fieldset id="label">
+        <table style="padding: 80px;">
+            <tr>
+                <td><label>Course</label></td>
+                <td><select name="" id="Sel">
+                        <option value="">select</option>
+                        <option value="46000" id="Java">Java</option>
+                        <option value="33000" id="Python">Python</option>
+                        <option value="43000" id="Mernstack">Mern</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Total fees</label></td>
+                <td><input id="result"></td>
+            </tr>
+            <tr>
+                <td><label>Caste</label></td>
+                <td>
+                    <input type="radio" name="radio" value="500" id="gen">Gen
+                    <input type="radio" name="radio" value="1000" id="obc">OBC
+                    <input type="radio" name="radio" value="3000" id="sc">SC/ST
+                </td>
+            </tr>
+            <tr>
+                <td><label>Concession fees</label></td>
+                <td><input type="text" id="conc"></td>
+            </tr>
+            <tr>
+                <td><label for="">Paid fees</label></td>
+                <td><input type="text" id="paid"></td>
+            </tr>
+            <tr>
+                <td><label for="">Due fees</label></td>
+                <td><input type="text" id="due"></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td><button id="btn" type="bton" class="bton">Calculate</button></td>
+                <td>
+                    <button class="bton">Reset</button>
+                </td>
+            </tr>
+        </table>
+        </form>
+    </fieldset>
+    <script src="./Fees_calculate.js"></script>
+</body>
+</html>

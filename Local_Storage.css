@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+main{
+    width: 88%;
+    margin: 55px;
+}
+#studentForm input[name="name"] {
+    grid-area: name;
+}
+#studentForm input[name="age"] {
+    grid-area: age;
+}
+#studentForm input[name="roll"] {
+    grid-area: roll;
+}
+#studentForm button{
+    grid-area: button;
+}
+#studentForm{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "name name"
+    "age roll"
+    "button button";
+}
+#studentForm * {
+    margin: 7px;
+    padding: 7px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    background-color: aqua;
+
+}
+#studentForm button{
+    outline: none;
+    background-color: rgb(190, 68, 125);
+    color: aliceblue;
+    border: 8px solid transparent;
+    cursor: pointer;
+
+}
+#studentForm button:hover{
+    background-color: red;
+}
+#studentForm input{
+    border: 3px solid black;
+    outline: none;
+}
+#studentForm input:focus{
+    border-color: saddlebrown;
+     
+}
+.students{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid rgb(209, 17, 17);
+    background-color: rgb(79, 201, 184);
+    color: #2f2f2f;
+    border-radius: 15px;
+}
+.students div{
+    width: 100%; 
+    padding: 10px;
+    text-align: center;
+
+}
+.students div *{
+    margin: 5px;
+
+}

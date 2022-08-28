@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Like and Dislik</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="like_dislike.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Like And Dislike</h2>
+        <img src="https://image.shutterstock.com/image-vector/like-dislike-vector-flat-icons-260nw-1439524601.jpg"
+            alt="photo">
+        <div class="voting">
+            <button id="likebtn">
+                <i class="fa fa-thumbs-up"></i>
+            </button>
+            <input type="number" id="input1" value="0" name>
+
+            <button id="dislikebtn">
+                <i class="fa fa-thumbs-down"></i>
+            </button>
+            <input type="number" id="input2" value="0" name>
+        </div>
+
+        <footer>
+            <button>
+                <i class="sum" onclick="add()"></i>sum of value<span id="inc"></span>
+            </button>
+        </footer>
+    </div>
+</body>
+<script type="text/javascript">
+    let likebtn = document.querySelector('#likebtn');
+    let dislikebtn = document.querySelector('#dislikebtn');
+    let input1 = document.querySelector('#input1');
+    let input2 = document.querySelector('#input2');
+
+
+    likebtn.addEventListener('click', () => {
+        input1.value = parseInt(input1.value) + 1;
+        input1.style.color = "#3b5998";
+    })
+
+    dislikebtn.addEventListener('click', () => {
+        input2.value = parseInt(input2.value) + 1;
+        input2.style.color = "#fff000";
+    })
+
+</script>
+
+</html>
